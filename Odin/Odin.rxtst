@@ -4,7 +4,6 @@ rxversion="7.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			enabled="False"
 			id="15a1824e-8e73-46ac-a33a-262649391f4c"
 			name="OperationsModule"
 			ref="d3e3c362-2822-4287-8974-62df7c04af07"
@@ -64,10 +63,10 @@ rxversion="7.2">
 			reportcompress="False"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			showinvisiblechars="True">
 			</testsuite>
 			<testmodule
-			enabled="False"
 			id="bd160801-b378-4580-b6b1-bb79dfddfd8c"
 			name="ControlPanel"
 			ref="ebe349c9-3770-48a7-910f-6f4757cdb54c"
@@ -93,7 +92,6 @@ rxversion="7.2">
 			reportlevel="Info;20">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="e4c89d37-6490-4f3c-84b3-9b49da8f393f"
 			name="BillingModule"
 			ref="475d5862-6461-49f4-8a37-45f111e7f588"
