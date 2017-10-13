@@ -73,6 +73,18 @@ rxversion="7.2">
 					variableid="a8eb0d7a-dd19-4306-b624-372b7e3d0aeb"
 					variablename="string6">
 					</var>
+					<var
+					dataname="LANGUAGE"
+					datasourceid="7d30c2a5-8c3e-45e1-a8de-d84fb1b3ada0"
+					variableid="cd76e981-1300-46b6-8566-3fbfceb2e516"
+					variablename="LANGUAGE">
+					</var>
+					<var
+					dataname="LOGGER_PATH"
+					datasourceid="7d30c2a5-8c3e-45e1-a8de-d84fb1b3ada0"
+					variableid="5d727a82-9ee1-4454-9af3-ad79f6f84b11"
+					variablename="Loggerpath">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
