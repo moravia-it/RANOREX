@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{8A511716-AAB7-4A93-88BC-AA864C650BA8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Odin</RootNamespace>
+    <AssemblyName>Odin</AssemblyName>
+    <RanorexVersion>7.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>c5ac571c-9928-4963-9c39-79d16ad7c19b</projectdefaultrepository>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>3b6adf86-022e-4837-9fe9-fc3f825cb03d</id>
+    </Compile>
+    <Compile Include="ControlPanel.cs">
+      <BoundTo>7a5aae46-c6e7-4372-a560-5f8af12e00d3</BoundTo>
+      <DependentUpon>ControlPanel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2e090343-259c-418b-9406-bf85a1687abd</id>
+    </Compile>
+    <Compile Include="ControlPanel.UserCode.cs">
+      <BoundTo>7a5aae46-c6e7-4372-a560-5f8af12e00d3</BoundTo>
+      <DependentUpon>ControlPanel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8bee152d-f6d7-4096-a1f0-9542863c9626</id>
+    </Compile>
+    <Compile Include="OdinRepository.cs">
+      <BoundTo>c5ac571c-9928-4963-9c39-79d16ad7c19b</BoundTo>
+      <DependentUpon>OdinRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>ede477ef-ad77-45cd-ac4e-b6eeaed28f34</id>
+    </Compile>
+    <Compile Include="Office365Module.cs">
+      <BoundTo>99427f40-1e8e-4f7f-a723-1613a3037110</BoundTo>
+      <DependentUpon>Office365Module.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>77dc1def-880f-4516-bbd3-892ea410da89</id>
+    </Compile>
+    <Compile Include="Office365Module.UserCode.cs">
+      <BoundTo>99427f40-1e8e-4f7f-a723-1613a3037110</BoundTo>
+      <DependentUpon>Office365Module.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>14667665-7131-4912-9f4e-f97f3170665f</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>79157f78-1a19-4915-9ebf-eb35151566f3</id>
+    </Compile>
+    <Compile Include="OperationsModule.cs">
+      <BoundTo>e16df311-0c66-4b1d-a112-b2f4fc57b356</BoundTo>
+      <DependentUpon>OperationsModule.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f30c047-6dec-4676-be2f-ea8e3f9693fc</id>
+    </Compile>
+    <Compile Include="OperationsModule.UserCode.cs">
+      <BoundTo>e16df311-0c66-4b1d-a112-b2f4fc57b356</BoundTo>
+      <DependentUpon>OperationsModule.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4425dfa4-a8b6-4756-b9b2-fd0ee9e883e5</id>
+    </Compile>
+    <Compile Include="BillingModule.cs">
+      <BoundTo>375a3f70-262f-4b99-be54-fe238821ddc5</BoundTo>
+      <DependentUpon>BillingModule.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4fd81dbc-1855-41c6-898a-1152f4f1aaeb</id>
+    </Compile>
+    <Compile Include="BillingModule.UserCode.cs">
+      <BoundTo>375a3f70-262f-4b99-be54-fe238821ddc5</BoundTo>
+      <DependentUpon>BillingModule.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>29a68c03-a544-4a6d-9676-cafd85f442fa</id>
+    </Compile>
+    <Compile Include="UserMethods.cs">
+      <id>b90c1de8-8f6b-40bf-9f2c-836591984476</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>70a52b72-84f7-4f70-86f2-b667b9dcf2c1</id>
+    </None>
+    <None Include="ControlPanel.rxrec">
+      <BoundTo>c5ac571c-9928-4963-9c39-79d16ad7c19b</BoundTo>
+      <id>7a5aae46-c6e7-4372-a560-5f8af12e00d3</id>
+      <recordtableid>ebe349c9-3770-48a7-910f-6f4757cdb54c</recordtableid>
+    </None>
+    <None Include="OdinRepository.rximg">
+      <BoundTo>c5ac571c-9928-4963-9c39-79d16ad7c19b</BoundTo>
+      <DependentUpon>OdinRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>e1d79751-36e6-4c65-b9bb-4c7bf72e3f38</id>
+    </None>
+    <None Include="OdinRepository.rxrep">
+      <id>c5ac571c-9928-4963-9c39-79d16ad7c19b</id>
+      <repoid>6a4fc0d6-40ec-46ef-8abe-363ce97746e3</repoid>
+      <reporootid>88cc342f-08cb-4daf-a187-fa9b010b462f</reporootid>
+    </None>
+    <None Include="Office365Module.rxrec">
+      <BoundTo>c5ac571c-9928-4963-9c39-79d16ad7c19b</BoundTo>
+      <id>99427f40-1e8e-4f7f-a723-1613a3037110</id>
+      <recordtableid>99243033-4693-4325-a2c3-d22c428c7528</recordtableid>
+    </None>
+    <None Include="OperationsModule.rxrec">
+      <BoundTo>c5ac571c-9928-4963-9c39-79d16ad7c19b</BoundTo>
+      <id>e16df311-0c66-4b1d-a112-b2f4fc57b356</id>
+      <recordtableid>d3e3c362-2822-4287-8974-62df7c04af07</recordtableid>
+    </None>
+    <None Include="BillingModule.rxrec">
+      <BoundTo>c5ac571c-9928-4963-9c39-79d16ad7c19b</BoundTo>
+      <id>375a3f70-262f-4b99-be54-fe238821ddc5</id>
+      <recordtableid>475d5862-6461-49f4-8a37-45f111e7f588</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Odin.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>41639c50-8063-4ffd-9d57-997928ee626d</id>
+    </Content>
+    <Content Include="Odin.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8549f955-08bd-400c-94b9-8e7863d73fdc</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
