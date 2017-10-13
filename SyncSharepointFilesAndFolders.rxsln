@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 7.2
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{69A5EAC2-27FF-48E5-A50A-0181420D9971}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncSharepointFilesAndFolders", "SyncSharepointFilesAndFolders\SyncSharepointFilesAndFolders.csproj", "{0E4ADB81-6BBB-4442-9B06-D2623D08D170}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E4ADB81-6BBB-4442-9B06-D2623D08D170}.Debug|x86.Build.0 = Debug|x86
+		{0E4ADB81-6BBB-4442-9B06-D2623D08D170}.Debug|x86.ActiveCfg = Debug|x86
+		{0E4ADB81-6BBB-4442-9B06-D2623D08D170}.Release|x86.Build.0 = Release|x86
+		{0E4ADB81-6BBB-4442-9B06-D2623D08D170}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

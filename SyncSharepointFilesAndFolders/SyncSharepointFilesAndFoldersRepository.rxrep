@@ -1,0 +1,656 @@
+﻿<repository
+id="9f086f20-5663-4ac1-8119-3f0dd787e675"
+name="SyncSharepointFilesAndFoldersRepository"
+rxversion="7.2">
+	<codegen
+	classname="SyncSharepointFilesAndFoldersRepository"
+	namespace="SyncSharepointFilesAndFolders">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="f06c2356-b1a3-444e-a614-1d55de7f783d"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="a98e4abc-5461-4a4b-900f-768f0f55bef0"
+		isrooted="True"
+		name="HarulaDocumentsAllDocuments"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="17757aba-2534-4e9f-8fb4-0472a239f8f0"
+			name="Sync"
+			refimgid="ebf024a6-213b-44fd-a942-140b1d5582d8"
+			searchtimeout="30000ms">
+				/dom//div[#'appRoot']/div/div[3]/div/div[2]/div[3]/div[1]/div/div[3]/div/div[2]/div[4]/div/?/?/span[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="6e163dd9-e18e-4750-a57e-cf0da386ed76"
+			name="CredPasswordInputtext"
+			refimgid="35af8b99-6a7d-4551-a0f4-b21cd20cdbd4"
+			searchtimeout="30000ms">
+				/dom//input[#'cred_password_inputtext']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="a93b2823-704c-4663-8ccf-c7d857c9b1f1"
+			name="CredSignInButton"
+			refimgid="a110f569-1a63-4df5-9924-03d33fd0a278"
+			refpath="/dom[@domain='login.microsoftonline.com']//button[#'cred_sign_in_button']"
+			searchtimeout="30000ms">
+				/dom//button[#'cred_sign_in_button']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ff9e9963-ea25-4966-8f12-9054743d7570"
+			name="File"
+			refimgid="02504246-251a-4209-98d8-9e12615162aa"
+			searchtimeout="30000ms">
+				/dom//div[#'appRoot']/div/div[3]/div/div[2]/div[3]/div[1]/div/div[3]/div/div[2]/div[2]/div/?/?/input
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="93968960-9963-48cc-b538-5b6c1604fbcc"
+			name="DivTagUseA"
+			refimgid="7f7dc827-5f91-490d-ba33-d1289e65747e"
+			refpath="/dom[@domain='login.microsoftonline.com']//table[#'use_another_account']/tbody/tr/td/table/tbody/tr[2]/td[2]/div[1]"
+			searchtimeout="30000ms">
+				/dom//table[#'use_another_account']//td/table/tbody/tr[2]/td[2]/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="9c4ccc8b-272b-4377-ad50-1df41f952c27"
+			name="CredUseridInputtext"
+			refimgid="6f88eb97-235d-487c-9003-29f777c4c5df"
+			refpath="/dom[@domain='login.microsoftonline.com']//input[#'cred_userid_inputtext']"
+			searchtimeout="30000ms">
+				/dom//input[#'cred_userid_inputtext']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="26e97ace-bd2f-4bee-884b-776144cc19a7"
+			name="Delete1"
+			refimgid="03a7510e-aa35-4e85-80c7-c35f9b40f27d"
+			searchtimeout="30000ms">
+				/dom//div[#'appRoot']/div/div[6]/div/div/div/div/div[2]/div/div/div[2]/div[2]//button[1]/span[2]
+			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="52d56af2-9910-4931-b83d-b82bd2a6a1ce"
+			isrooted="True"
+			name="OdOverlayHostContent"
+			refpath="/dom[@domain='harula.sharepoint.com']//div[#'appRoot']/div/div[6]/div/div/div"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="b77e5a11-3b1c-4077-848b-2a5a45497d8a"
+				name="Delete"
+				refimgid="34217404-4fcd-4f3a-a85e-83e8a0f5b2b5"
+				searchtimeout="30000ms">
+					/dom//div[#'appRoot']/div/div[3]/div/div[2]/div[3]/div[1]/div/div[3]/div/div[2]/div[2]//span[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="divtag"
+				id="7d5b5188-ac54-48cf-b4e5-6f5e5518fd05"
+				name="SomeITag"
+				refimgid="0d359ba4-cac2-4871-bec5-9e11fca1ec87"
+				searchtimeout="30000ms">
+					/dom//div[#'appRoot']/div/div[3]/div/div[2]/div[3]/div[2]/div[1]/div/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div/div/div/div[1]/div/div/div[1]/?/?/div
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="divtag"
+				id="887adcfa-7368-41a3-976f-d578f859a07e"
+				name="SomeITag1"
+				refimgid="d36d8c8c-ec5c-40cc-ab76-d34204cddc0c"
+				searchtimeout="30000ms">
+					/dom//div[#'appRoot']/div/div[3]/div/div[2]/div[3]/div[2]/div[1]/div/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div/div/div/div[2]/div/div/div[1]/?/?/div
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="divtag"
+				id="c9faa392-cc99-4af8-bc1b-438fed34ef51"
+				name="SomeITag2"
+				refimgid="601ac24c-bfb1-427a-85e9-13de2754733e"
+				searchtimeout="30000ms">
+					/dom//div[#'appRoot']/div/div[3]/div/div[2]/div[3]/div[2]/div[1]/div/div/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div[1]/?/?/div
+				</item>
+				<basepath>
+					/dom//div[#'appRoot']/div/div[3]/div/div[2]/div[3]
+				</basepath>
+			</folder>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="bdbeea7b-cbe0-4fef-a228-9f8b179e7587"
+		isrooted="True"
+		name="InternetExplorer"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="e3cfb83a-9312-467b-b978-8cb039a97bc6"
+			name="ButtonAllow"
+			refimgid="8b837348-d79d-48c9-a840-8fd4e737bb4f"
+			searchtimeout="30000ms">
+				/form[@processname='iexplore' and @accessiblerole='Dialog']/button[1]
+			</item>
+			<item
+			addcaps="toolbar,nativewindow"
+			capname="toolbar"
+			id="1c071185-d9fb-44b5-91ff-ec2386f094a4"
+			name="ToolBar1001"
+			refimgid="4fa9c187-693a-4f35-8c7c-c41ba98b1447"
+			refpath="/form[@title='Choose File to Upload']/element[@class='WorkerW']/container/element[@controlid='41477']/progressbar/element/toolbar[@controlid='1001']"
+			searchtimeout="30000ms">
+				/form[@processname='iexplore' and @accessiblerole='Dialog']/element[@class='WorkerW']/?/?/element[@controlid='41477']//toolbar[@controlid='1001']
+			</item>
+			<folder
+			addcaps="container,nativewindow"
+			capname="container"
+			id="a9a144d9-c4c3-467f-8bd4-c9f82c264290"
+			isrooted="True"
+			name="ShellView"
+			refpath="/form[@title='Choose File to Upload']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='1']/container[@caption='ShellView']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="937c5cf3-3dea-4dd5-9005-919703929ae3"
+				name="SystemItemNameDisplay"
+				refimgid="b8b4b622-554e-46de-834e-cd68e53e7602"
+				searchtimeout="30000ms">
+					/form[@processname='iexplore' and @accessiblerole='Dialog']/element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem/text[@uiautomationvaluevalue=$string2]
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="29160b85-5a9d-4400-81ba-95028418931d"
+				name="SystemItemNameDisplay1"
+				refimgid="90ddf8cc-1116-41e0-8dcb-7fe061720e52"
+				searchtimeout="30000ms">
+					/form[@processname='iexplore' and @accessiblerole='Dialog']/element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem/text[@uiautomationvaluevalue=$string3]
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="ac584086-3b51-410d-8646-9a050ec8f3b3"
+				name="SystemItemNameDisplay2"
+				refimgid="287c4a33-21fc-4bdf-a32e-4084ef722d12"
+				searchtimeout="30000ms">
+					/form[@processname='iexplore' and @accessiblerole='Dialog']/element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem/text[@uiautomationvaluevalue=$string4]
+				</item>
+				<basepath>
+					/form[@processname='iexplore' and @accessiblerole='Dialog']/element[@class='DUIViewWndClassName']//container[@caption='ShellView']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@processname='iexplore' and @accessiblerole='Dialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="d49c0d23-03b6-482b-b609-04c6c8b17ef9"
+		isrooted="True"
+		name="MicrosoftOneDrive"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="6b8051e4-a39b-4c7a-b022-a3ccfb294675"
+			name="Text8512"
+			refimgid="42559371-8e21-4046-81c1-e722c3a889ce"
+			searchtimeout="30000ms">
+				/form[@processname='OneDrive' and @accessiblerole='Dialog']/?/?/text[@controlid='8512']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="30f14fc6-05a8-45c7-b4e3-e6963a91782e"
+			name="SignIn"
+			refimgid="0efeeed8-2ce9-4d9c-85a6-ab4364db538a"
+			searchtimeout="30000ms">
+				/form[@processname='OneDrive' and @accessiblerole='Dialog']/container/button[1]
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="e9ca4d4e-b029-409b-917f-14cdab9d27ff"
+			name="Close"
+			refimgid="7bf1ca12-1c57-4c4d-8714-f2af244381f7"
+			searchtimeout="30000ms">
+				/form[@processname='OneDrive' and @accessiblerole='Dialog']/?/?/titlebar/button[3]
+			</item>
+			<item
+			addcaps="tabpage"
+			capname="tabpage"
+			id="1bf1383d-5151-4a55-935e-eb4a5273656a"
+			name="Settings"
+			refimgid="f89daeff-5f51-4c66-923d-68a088ad8a8d"
+			searchtimeout="30000ms">
+				/form[@processname='OneDrive' and @accessiblerole='Dialog']/?/?/tabpage[1]
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="3ac0b1fb-db8f-471f-a362-111bf029a887"
+			name="Text8050"
+			refimgid="17042509-4743-46aa-affb-5db012398c43"
+			searchtimeout="30000ms">
+				/form[@processname='OneDrive' and @accessiblerole='Dialog']/container/element[@controlid='8034']/element/element[2]/text[@controlid='8050']
+			</item>
+			<basepath>
+				/form[@processname='OneDrive' and @accessiblerole='Dialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAADoSURBVDhPYxj+gJFBO1yTQTfQiME4jRUqRjRg
+Yii5cJ2h/Oo/CL72i6H4rDFUDgfQK+YGKv4E1fSDofTyZyDOYii9GgDEn4FifxlCQ5mhqrGA0otH
+oJr/MZRdu86Qf2IxQxlQEwiXX93JYBigyeA/XwCqGg2EzFIEKnoF0Xz1N4Nnry7cMHRcfGEnVBcU
+ZO03APoRZAtI8iRDycUyIP8OhkZk7NEhA9UNBBn7quASpkmWKApx4mtfGaKWCkIMCFnJCRT4ApYw
+CrPAVIwD5x2thRiADsquvsGqAQVf+8OQuFIUqmMEAwYGAPJXvJPmHxOAAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="menubar,nativewindow"
+		capname="menubar"
+		id="622450e6-5b09-491c-a9f0-bf1193403d0f"
+		isrooted="True"
+		name="Explorer"
+		refpath="/menubar[@processname='explorer']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="3fb0c363-ad4e-43d8-81d5-9daec354090d"
+			name="InternetExplorer1RunningWindow"
+			refimgid="28de251a-14a6-4c93-a222-48dd673e638c"
+			searchtimeout="30000ms">
+				/menubar[@processname='explorer']/container//toolbar/button[@accessiblename~'Internet Explorer']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="403a3afe-abb2-4267-9718-8ef30d12c1b6"
+			name="FileExplorer1RunningWindow"
+			refimgid="c3ae05b0-e4a7-4018-89a7-6caf3879b7de"
+			searchtimeout="30000ms">
+				/menubar[@processname='explorer']/container[@controlid='40965']//toolbar/button[1]
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="unknown"
+			id="233b8061-fb32-4b74-935d-f1f6be73251a"
+			name="ShowDesktop"
+			refimgid="8fa67fb1-e42e-4589-8568-ed34fe550b90"
+			searchtimeout="30000ms">
+				/menubar[@processname='explorer']/container[@controlid='303']/element[@controlid='307']
+			</item>
+			<item
+			addcaps="button,nativeitem,checkable"
+			capname="button"
+			id="1bc85667-29c9-4c0f-ac37-15a9f2448837"
+			name="OneDriveMoraviaUpToDate"
+			refimgid="c9cb9d0a-3b7c-4570-86e4-bdbd31f624fd"
+			searchtimeout="30000ms">
+				/menubar[@processname='explorer']/?/?/container[@class='SysPager']/toolbar[@controlid='1504']/button[@text~'OneDrive - Moravia']
+			</item>
+			<basepath>
+				/menubar[@processname='explorer']
+			</basepath>
+			<icon>
+				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
+VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="b8b8f1a6-8a9b-4949-a305-7391f75392de"
+		isrooted="True"
+		name="CUsersUserDocumentsRanorexRanorexS"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem"
+			capname="treeitem"
+			id="6ec1353b-454e-4a37-90ef-03ae299eb696"
+			name="QuickAccess"
+			refimgid="a0df470a-fec5-4777-8b5c-a6d3a5ad71d7"
+			searchtimeout="30000ms">
+				/form[@processname='explorer']/element[@class='ShellTabWindowClass']/?/?/container[@class='DirectUIHWND']/element/element/tree/treeitem[1]
+			</item>
+			<item
+			addcaps="treeitem"
+			capname="treeitem"
+			id="04054811-656b-4ba6-bb06-5dcda0122da8"
+			name="Moravia"
+			refimgid="a7038847-29b8-4905-ac9c-ba78b8d19a77"
+			refpath="/form[@title~'^C:\\Users\\User\\Moravia\\har']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/element/tree[@controlid='100']/treeitem[@text='Desktop']/treeitem[@text='Moravia']"
+			searchtimeout="30000ms">
+				/form[@processname='explorer']/element[@class='ShellTabWindowClass']/?/?/container[@class='DirectUIHWND']/element[4]/?/?/tree[@controlid='100']/?/?/treeitem[@text='Moravia']
+			</item>
+			<item
+			addcaps="treeitem"
+			capname="treeitem"
+			id="28a7c873-14c5-4cd6-a072-368b0786e55b"
+			name="HarulaDocuments"
+			refimgid="0cbbdb17-88b9-4965-83bd-383d2a62437f"
+			searchtimeout="30000ms">
+				/form[@processname='explorer']/container//treeitem[@name~'harula']
+			</item>
+			<item
+			addcaps="treeitem"
+			capname="list"
+			id="111fac65-9d75-49a5-ad4e-9feb65edcb9e"
+			name="Copy_of_HarulaDocuments"
+			refimgid="ca0014b1-8ecd-42c1-8a0b-d57757fa6a2a"
+			searchtimeout="30000ms">
+				/form[@processname='explorer']/element[@class='ShellTabWindowClass']//element[@instance='1']/container/list
+			</item>
+			<basepath>
+				/form[@processname='explorer']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAICSURBVDhPrZJNbxJRFIZH05ULFya65k/otj/F
+lVojSAErVT6GNGKtYhqMTYiNTZuGVuPoDzAxLjSzoUpREIGhIEhb0AAtDDOFuff1gLMhYqiJT3I2
+N+c8ue+5V/hv8NLymUbcbtH6le6X26IV3BYURKp5C88Gz5qto+HVDZuWW3jfjNvkVmJaVlMuWc+4
+5Z7ilY3inMxKd4Jm62h47XmI114wXXmI9icHOkkX9K9udBUPjEIARjHwymwdzUBQ3WT8x0toyn2o
+nx3Q0jPo5m7D2PEfR7BJgg2G2jPoebpFwo5OyoWjzCwMxUuSsYIoCaIkiA5u0Nq2QU06KcZN9Pox
+8v5jCPbXGapr0LLzOIxbKcY0dIrR68cYL1gnwSrD/go6mSAOPl6jZdpJcAO97C1apv81KuIps/1P
+eHU1xHefMuwuo5OeQ3PrKlqJ69BSTnRpD3rWV6dlXgSEE+bIMHxvJcQrTxgqEajpABpbU4M9/Ba4
++xHACoEwgL8IKhESRBi+L6Gd8qIRm8LhQOBAl/6DkfeNEXwjQXmJseIiGnEn6rErJLDSh3LgiF7C
+UHzo5cVHoiieNEeGQfnxLC+HNWNnQW1+sL+pxy5LB3Gr1Ek6JRJIRs4jtb94Lk1OChPmyDD8Z/g0
+Ly3O8NKDd2rm3gXz+N8A3k5083fP722L58yjMQjCLwJnoGCMNEU2AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="64e8711a-1757-4b13-a989-c81cd9ab9f52"
+		isrooted="True"
+		name="Files2"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="listitem"
+			id="4bac66de-3820-48ae-be99-1399a0dc7e98"
+			name="SystemItemNameDisplay"
+			refimgid="64c3d139-cc45-4851-83e2-70290947f9a2"
+			searchtimeout="30000ms">
+				/form[@processname='explorer' and @windowtext~'Files2']/element[@class='ShellTabWindowClass']//container[@automationid='FolderLayoutContainer']/?/?/list/listitem[@automationid='0']
+			</item>
+			<basepath>
+				/form[@processname='explorer' and @windowtext~'Files2']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAICSURBVDhPrZJNbxJRFIZH05ULFya65k/otj/F
+lVojSAErVT6GNGKtYhqMTYiNTZuGVuPoDzAxLjSzoUpREIGhIEhb0AAtDDOFuff1gLMhYqiJT3I2
+N+c8ue+5V/hv8NLymUbcbtH6le6X26IV3BYURKp5C88Gz5qto+HVDZuWW3jfjNvkVmJaVlMuWc+4
+5Z7ilY3inMxKd4Jm62h47XmI114wXXmI9icHOkkX9K9udBUPjEIARjHwymwdzUBQ3WT8x0toyn2o
+nx3Q0jPo5m7D2PEfR7BJgg2G2jPoebpFwo5OyoWjzCwMxUuSsYIoCaIkiA5u0Nq2QU06KcZN9Pox
+8v5jCPbXGapr0LLzOIxbKcY0dIrR68cYL1gnwSrD/go6mSAOPl6jZdpJcAO97C1apv81KuIps/1P
+eHU1xHefMuwuo5OeQ3PrKlqJ69BSTnRpD3rWV6dlXgSEE+bIMHxvJcQrTxgqEajpABpbU4M9/Ba4
++xHACoEwgL8IKhESRBi+L6Gd8qIRm8LhQOBAl/6DkfeNEXwjQXmJseIiGnEn6rErJLDSh3LgiF7C
+UHzo5cVHoiieNEeGQfnxLC+HNWNnQW1+sL+pxy5LB3Gr1Ek6JRJIRs4jtb94Lk1OChPmyDD8Z/g0
+Ly3O8NKDd2rm3gXz+N8A3k5083fP722L58yjMQjCLwJnoGCMNEU2AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,nativewindow"
+		capname="contextmenu"
+		id="feb7af36-a00f-40a9-b583-fe174e1ad4b8"
+		isrooted="True"
+		name="OneDrive"
+		refpath="/contextmenu[@processname='OneDrive']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="b9ab56b7-605f-4ba1-942d-3832f7755e00"
+			name="Settings"
+			refimgid="3caa2922-391e-4f30-b137-e80ced8e07ba"
+			searchtimeout="30000ms">
+				/contextmenu[@processname='OneDrive']/?/?/menuitem[4]
+			</item>
+			<basepath>
+				/contextmenu[@processname='OneDrive']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<item
+		addcaps="button,nativewindow"
+		capname="button"
+		id="d72752f5-0df9-4f6d-939a-20b209770648"
+		name="Copy_of_Cancel"
+		refimgid="1dfdb831-9fc8-4c65-b00b-31ae3010bfe8"
+		searchtimeout="30000ms">
+			/form[@processname='OneDrive' and @instance='0']/button[1]
+		</item>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="a4db7f00-04cc-447f-a024-3e71b7c1fddf"
+		isrooted="True"
+		name="Copy_of_CUsersUserDocumentsRanorexRanorexS"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem"
+			capname="list"
+			id="51b732eb-27a4-40a1-a8c8-960f5fb5564f"
+			name="Copy_of_HarulaDocuments"
+			refimgid="8de4f31d-ad3e-40c2-987f-3e941b208d72"
+			searchtimeout="30000ms">
+				/form[@processname='explorer' and @accessiblename~'harula']/element[@class='ShellTabWindowClass']//element[@instance='1']/container/list
+			</item>
+			<basepath>
+				/form[@processname='explorer' and @accessiblename~'harula']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAICSURBVDhPrZJNbxJRFIZH05ULFya65k/otj/F
+lVojSAErVT6GNGKtYhqMTYiNTZuGVuPoDzAxLjSzoUpREIGhIEhb0AAtDDOFuff1gLMhYqiJT3I2
+N+c8ue+5V/hv8NLymUbcbtH6le6X26IV3BYURKp5C88Gz5qto+HVDZuWW3jfjNvkVmJaVlMuWc+4
+5Z7ilY3inMxKd4Jm62h47XmI114wXXmI9icHOkkX9K9udBUPjEIARjHwymwdzUBQ3WT8x0toyn2o
+nx3Q0jPo5m7D2PEfR7BJgg2G2jPoebpFwo5OyoWjzCwMxUuSsYIoCaIkiA5u0Nq2QU06KcZN9Pox
+8v5jCPbXGapr0LLzOIxbKcY0dIrR68cYL1gnwSrD/go6mSAOPl6jZdpJcAO97C1apv81KuIps/1P
+eHU1xHefMuwuo5OeQ3PrKlqJ69BSTnRpD3rWV6dlXgSEE+bIMHxvJcQrTxgqEajpABpbU4M9/Ba4
++xHACoEwgL8IKhESRBi+L6Gd8qIRm8LhQOBAl/6DkfeNEXwjQXmJseIiGnEn6rErJLDSh3LgiF7C
+UHzo5cVHoiieNEeGQfnxLC+HNWNnQW1+sL+pxy5LB3Gr1Ek6JRJIRs4jtb94Lk1OChPmyDD8Z/g0
+Ly3O8NKDd2rm3gXz+N8A3k5083fP722L58yjMQjCLwJnoGCMNEU2AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="d36ad539-c7b6-4a5d-ac39-f676f319ba60"
+		name="string2">
+			Asia Q2 Sales.xlsx
+		</var>
+		<var
+		id="3ccb3ac3-73ee-4f70-89e3-1c4a789d4618"
+		name="string3">
+			Carbon 3D Printing Proposal.docx
+		</var>
+		<var
+		id="72489f8b-2ecd-4afa-a2f9-8127ecf0f18a"
+		name="string4">
+			Contoso Sales by Product Analysis.xlsx
+		</var>
+		<var
+		id="c6f7ae94-420b-4749-b246-b210c4824dcd"
+		name="string7">
+		</var>
+	</variables>
+</repository>

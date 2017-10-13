@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="SyncSharepointFilesAndFolders"
+      id="cb222f7f-05e5-40fb-b849-c0ea69140b8a"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="SyncSharepointFilesAndFolders"
+      id="cb222f7f-05e5-40fb-b849-c0ea69140b8a"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
