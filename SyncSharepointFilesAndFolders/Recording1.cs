@@ -194,8 +194,8 @@ namespace SyncSharepointFilesAndFolders
             Host.Current.OpenBrowser("https://harula.sharepoint.com/sites/harula/Sdilene%20dokumenty/Forms/AllItems.aspx", "IE", "", false, false, false, false, false);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(1));
+            Delay.Duration(6000, false);
             
             try {
                 Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'HarulaDocumentsAllDocuments.DivTagUseA' at Center.", repo.HarulaDocumentsAllDocuments.DivTagUseAInfo, new RecordItemIndex(2));

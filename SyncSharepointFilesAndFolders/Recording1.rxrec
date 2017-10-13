@@ -92,7 +92,7 @@ rxversion="7.2">
 			</url>
 		</openwebsiterecorditem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="6000ms"
 		enabled="True"
 		optional="False">
 			<comment>
