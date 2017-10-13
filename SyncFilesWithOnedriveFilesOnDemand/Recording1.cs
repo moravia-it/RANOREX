@@ -79,6 +79,14 @@ namespace SyncFilesWithOnedriveFilesOnDemand
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE' with arguments '' in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication("C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE", "", "C:\\Program Files\\Microsoft Office\\root\\Office16", false);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.CellL8' at 41;16.", repo.Book1Excel.CellL8Info, new RecordItemIndex(1));
+            repo.Book1Excel.CellL8.Click("41;16");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

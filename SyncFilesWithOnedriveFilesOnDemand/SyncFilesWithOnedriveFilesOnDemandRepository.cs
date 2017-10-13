@@ -27,6 +27,7 @@ namespace SyncFilesWithOnedriveFilesOnDemand
     public partial class SyncFilesWithOnedriveFilesOnDemandRepository : RepoGenBaseFolder
     {
         static SyncFilesWithOnedriveFilesOnDemandRepository instance = new SyncFilesWithOnedriveFilesOnDemandRepository();
+        SyncFilesWithOnedriveFilesOnDemandRepositoryFolders.Book1ExcelAppFolder _book1excel;
 
         /// <summary>
         /// Gets the singleton class instance representing the SyncFilesWithOnedriveFilesOnDemandRepository element repository.
@@ -43,6 +44,7 @@ namespace SyncFilesWithOnedriveFilesOnDemand
         public SyncFilesWithOnedriveFilesOnDemandRepository() 
             : base("SyncFilesWithOnedriveFilesOnDemandRepository", "/", null, 0, false, "a60a7d66-fe5e-415b-a7aa-9bd7020ac36b", ".\\RepositoryImages\\SyncFilesWithOnedriveFilesOnDemandRepositorya60a7d66.rximgres")
         {
+            _book1excel = new SyncFilesWithOnedriveFilesOnDemandRepositoryFolders.Book1ExcelAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace SyncFilesWithOnedriveFilesOnDemand
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The Book1Excel folder.
+        /// </summary>
+        [RepositoryFolder("61ed3b30-bd1d-443c-83ec-9772c78be74e")]
+        public virtual SyncFilesWithOnedriveFilesOnDemandRepositoryFolders.Book1ExcelAppFolder Book1Excel
+        {
+            get { return _book1excel; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,72 @@ namespace SyncFilesWithOnedriveFilesOnDemand
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
     public partial class SyncFilesWithOnedriveFilesOnDemandRepositoryFolders
     {
+        /// <summary>
+        /// The Book1ExcelAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("61ed3b30-bd1d-443c-83ec-9772c78be74e")]
+        public partial class Book1ExcelAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _celll8Info;
+
+            /// <summary>
+            /// Creates a new Book1Excel  folder.
+            /// </summary>
+            public Book1ExcelAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Book1Excel", "/form[@class='XLMAIN' and @instance='1']", parentFolder, 30000, null, true, "61ed3b30-bd1d-443c-83ec-9772c78be74e", "")
+            {
+                _celll8Info = new RepoItemInfo(this, "CellL8", ".//table[@name='Sheet1']/row[@index='8']/cell[@address='L8']", 30000, null, "34031680-5bc2-44d6-88b9-2a4852449410");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("61ed3b30-bd1d-443c-83ec-9772c78be74e")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("61ed3b30-bd1d-443c-83ec-9772c78be74e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellL8 item.
+            /// </summary>
+            [RepositoryItem("34031680-5bc2-44d6-88b9-2a4852449410")]
+            public virtual Ranorex.Cell CellL8
+            {
+                get
+                {
+                    return _celll8Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellL8 item info.
+            /// </summary>
+            [RepositoryItemInfo("34031680-5bc2-44d6-88b9-2a4852449410")]
+            public virtual RepoItemInfo CellL8Info
+            {
+                get
+                {
+                    return _celll8Info;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

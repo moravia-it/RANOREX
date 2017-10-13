@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-embeddedrepository="false"
+embeddedrepository="False"
 id="dc03d6a4-d1f9-4a02-95a4-6b5063b2373a"
-mode="Global"
+mode="Desktop"
 rxversion="7.2">
 	<name>
 		Recording1
@@ -29,12 +29,159 @@ rxversion="7.2">
 	<variables>
 	</variables>
 	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<filename>
+				C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE
+			</filename>
+			<workingdir>
+				C:\Program Files\Microsoft Office\root\Office16
+			</workingdir>
+			<args>
+			</args>
+		</runapprecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="41;16"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="950d88aa-556e-428d-818f-ac8f471105c8"
+		sx="771"
+		sy="570"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="34031680-5bc2-44d6-88b9-2a4852449410"
+			sourcename="Recorder">
+				<element
+				capabilities="excelrange"
+				dontcache="False"
+				enabled="True"
+				flavor="office"
+				hasfocus="False"
+				index="11"
+				prefcap="cell"
+				rect="730,554,64,20"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="columnindex"
+					type="System.Int32">
+						12
+					</attribute>
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="rowindex"
+					type="System.Int32">
+						8
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="address"
+					type="System.String">
+						L8
+					</attribute>
+				</element>
+				<path>
+					/form[@class='XLMAIN' and @instance='1']//table[@name='Sheet1']/row[@index='8']/cell[@address='L8']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="4cc0455a-f630-4aa7-9976-21018faf40b6">
+				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
+AFIn3F+lFFAC0UUUAf/Z
+			</helperscreenshot>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="2f935bbf-04f2-4efe-8373-c0e8a649b877"
 	name="SyncFilesWithOnedriveFilesOnDemandRepository"
 	relativepath="SyncFilesWithOnedriveFilesOnDemandRepository.rxrep"
-	rxversion="6.0">
+	rxversion="7.2">
 		<codegen
 		classname="SyncFilesWithOnedriveFilesOnDemandRepository"
 		namespace="SyncFilesWithOnedriveFilesOnDemand">

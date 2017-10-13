@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="2f935bbf-04f2-4efe-8373-c0e8a649b877"
 name="SyncFilesWithOnedriveFilesOnDemandRepository"
 rxversion="7.2">
@@ -12,8 +11,41 @@ rxversion="7.2">
 	id="a60a7d66-fe5e-415b-a7aa-9bd7020ac36b"
 	isrooted="True"
 	name="Root"
-	searchtimeout="30000ms"
+	searchtimeout="0ms"
 	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow,excelapplication"
+		capname="form"
+		id="61ed3b30-bd1d-443c-83ec-9772c78be74e"
+		isrooted="True"
+		name="Book1Excel"
+		refpath="/form[@processname='EXCEL' and @class='XLMAIN' and @instance='1']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="34031680-5bc2-44d6-88b9-2a4852449410"
+			name="CellL8"
+			refimgid="c9acc8f6-36eb-4353-bff2-00441f7d5eac"
+			refpath="/form[@processname='EXCEL' and @class='XLMAIN' and @instance='1']/element[@class='XLDESK']/workbook/table/row[@index='8']/cell[@address='L8']"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='1']//table[@name='Sheet1']/row[@index='8']/cell[@address='L8']
+			</item>
+			<basepath>
+				/form[@class='XLMAIN' and @instance='1']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFNSURBVDhPY4ABmcIQTuViN2OFYrc0+SLXyfIF
+zgfk85zeyuc5/5fPdfoPVYYJFCs81ymUedxWLHP/r1jq/h9owH+FItf/CoUu/+XzgZqhBoDFkLB8
+octP+ULXCQxKFZ7/Fcs9/hMyAB38+vMbbAjRBoDEQADmAhgbbkDlmgn/T9+/8l+1zOu/RrnP/1sv
+HvzffukwTheAAIoBsbMrwYJ5S9r/V6+Z+P/P37//3TpSiHcByAuXn9z6f+Lupf8PXj/9v/bMLrxh
+AAIYBqQvbARLgALIvjWOtDCAGQByOgi7diST5gIVIH331eP/my7s///0/UtIAJLigvLVfWBBr97M
+/22bZoHZfr3ZxLtg9sE1/9ee3Q1OB7pVAf9ffXr7/9CNM6SFAc1TIjKG5wViMxM07+EGoOysWOZm
+BjQgTaHQdRowOx+Wy3P6gN8ABgYA0S8tdd7bJP8AAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
