@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{A5813BEC-A0EE-461E-BE17-FA926847CA5E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SyncFilesWithOnedriveFilesOnDemand</RootNamespace>
+    <AssemblyName>SyncFilesWithOnedriveFilesOnDemand</AssemblyName>
+    <RanorexVersion>7.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>8c1fb0e3-2257-4963-b0bc-cc4c2be0e39b</projectdefaultrepository>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>69914a6a-86de-427c-8c55-f03fc083d7ae</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>89c7a68e-ca44-41bb-aa33-c1150920481d</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>042d6970-b984-411e-8ed2-5432d1b75b2e</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2e95101e-650a-478a-86bc-f8aac5bec450</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>042d6970-b984-411e-8ed2-5432d1b75b2e</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ceef99ee-76b4-4490-8b9d-bc90e29458f1</id>
+    </Compile>
+    <Compile Include="SyncFilesWithOnedriveFilesOnDemandRepository.cs">
+      <BoundTo>8c1fb0e3-2257-4963-b0bc-cc4c2be0e39b</BoundTo>
+      <DependentUpon>SyncFilesWithOnedriveFilesOnDemandRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>51774633-f82e-4600-a84c-bd00d1f2c432</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>30f83f15-b46c-4e9d-8acd-7db5b9e3c001</id>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>8c1fb0e3-2257-4963-b0bc-cc4c2be0e39b</BoundTo>
+      <id>042d6970-b984-411e-8ed2-5432d1b75b2e</id>
+      <recordtableid>dc03d6a4-d1f9-4a02-95a4-6b5063b2373a</recordtableid>
+    </None>
+    <None Include="SyncFilesWithOnedriveFilesOnDemandRepository.rximg">
+      <BoundTo>8c1fb0e3-2257-4963-b0bc-cc4c2be0e39b</BoundTo>
+      <DependentUpon>SyncFilesWithOnedriveFilesOnDemandRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>f0974b3e-3ee2-49af-b40a-0c09c7b3912c</id>
+    </None>
+    <None Include="SyncFilesWithOnedriveFilesOnDemandRepository.rxrep">
+      <id>8c1fb0e3-2257-4963-b0bc-cc4c2be0e39b</id>
+      <repoid>2f935bbf-04f2-4efe-8373-c0e8a649b877</repoid>
+      <reporootid>a60a7d66-fe5e-415b-a7aa-9bd7020ac36b</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SyncFilesWithOnedriveFilesOnDemand.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>0625ad12-25dc-4328-93ab-40f6813c358f</id>
+    </Content>
+    <Content Include="SyncFilesWithOnedriveFilesOnDemand.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>7076946b-0fd0-432d-9b74-b6b992b7ca57</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

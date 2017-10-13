@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="false"
+id="dc03d6a4-d1f9-4a02-95a4-6b5063b2373a"
+mode="Global"
+rxversion="7.2">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="SyncFilesWithOnedriveFilesOnDemand">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="2f935bbf-04f2-4efe-8373-c0e8a649b877"
+	name="SyncFilesWithOnedriveFilesOnDemandRepository"
+	relativepath="SyncFilesWithOnedriveFilesOnDemandRepository.rxrep"
+	rxversion="6.0">
+		<codegen
+		classname="SyncFilesWithOnedriveFilesOnDemandRepository"
+		namespace="SyncFilesWithOnedriveFilesOnDemand">
+		</codegen>
+		<rootfolder
+		id="a60a7d66-fe5e-415b-a7aa-9bd7020ac36b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

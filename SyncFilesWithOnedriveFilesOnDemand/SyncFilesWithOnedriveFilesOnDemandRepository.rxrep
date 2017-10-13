@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+id="2f935bbf-04f2-4efe-8373-c0e8a649b877"
+name="SyncFilesWithOnedriveFilesOnDemandRepository"
+rxversion="7.2">
+	<codegen
+	classname="SyncFilesWithOnedriveFilesOnDemandRepository"
+	namespace="SyncFilesWithOnedriveFilesOnDemand">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="a60a7d66-fe5e-415b-a7aa-9bd7020ac36b"
+	isrooted="True"
+	name="Root"
+	searchtimeout="30000ms"
+	usecache="True">
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

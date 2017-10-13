@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.2">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroups
+			id="0db155c4-a329-4fa9-a5e6-f36d6f609597"
+			name="SyncFilesWithOnedriveFilesOnDemand">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="0db155c4-a329-4fa9-a5e6-f36d6f609597"
+			name="SyncFilesWithOnedriveFilesOnDemand">
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+</modulegroupdoc>
