@@ -493,6 +493,76 @@ Ly3O8NKDd2rm3gXz+N8A3k5083fP722L58yjMQjCLwJnoGCMNEU2AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@processname='explorer' and @windowtext~'Files2']/element[@class='ShellTabWindowClass']//container[@automationid='FolderLayoutContainer']/?/?/list/listitem[@automationid='0']
 			</item>
+			<item
+			addcaps="list,accessible"
+			capname="list"
+			id="c8ee505a-e0e0-492c-a320-01dd70d67870"
+			name="VistaElementos"
+			refimgid="4b713f3f-962a-4870-89fb-ed1ca53232b7"
+			searchtimeout="30000ms">
+				/form[@processname='explorer' and @windowtext~'Files2']/element[@class='ShellTabWindowClass']//element/container/list
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="db5301e9-8702-46d0-a1ae-5689d93e1f78"
+			name="SystemItemNameDisplay1"
+			refimgid="d3bee428-2745-41bf-95ef-1e929d4abc18"
+			refpath="/form[@title~'^C:\\Users\\User\\Documents\\F']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/listitem[@automationid='0']/text[@automationid='System.ItemNameDisplay']"
+			searchtimeout="30000ms">
+				/form[@processname='explorer' and @windowtext~'Files2']/element[@class='ShellTabWindowClass']//element[@instance='1']//listitem[@automationid='0']/text[@automationid='System.ItemNameDisplay']
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="d58d3428-9ae7-4acf-8488-1747e27e5ad5"
+			name="SystemItemNameDisplay2"
+			refimgid="50699fe3-76b9-4215-8592-d89087d64549"
+			refpath="/form[@title~'^C:\\Users\\User\\Documents\\F']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/listitem[@automationid='4']/text[@automationid='System.ItemNameDisplay']"
+			searchtimeout="30000ms">
+				/form[@processname='explorer' and @windowtext~'Files2']/element[@class='ShellTabWindowClass']//element[@instance='1']//listitem[@automationid='4']/text[@automationid='System.ItemNameDisplay']
+			</item>
+			<folder
+			addcaps="container,nativewindow"
+			capname="container"
+			id="9815f2ee-0930-43fa-b653-267649c154ca"
+			isrooted="True"
+			name="ShellView"
+			refpath="/form[@title='C:\Users\User\Documents\Files2\ESN']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='1']/container[@caption='ShellView']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="list,accessible"
+				capname="list"
+				id="b9ecb755-aea5-4b10-9563-9b4f858fe5b1"
+				name="VistaElementos1"
+				refimgid="89dfc746-c140-49a2-8086-7044ff09bf22"
+				refpath="/form[@title~'^C:\\Users\\User\\Documents\\F']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/list[@accessiblename='Vista Elementos']"
+				searchtimeout="30000ms">
+					/form[@processname='explorer' and @windowtext~'Files2']/element[@class='ShellTabWindowClass']//element[@instance='1']/container[@caption='ShellView']/?/?/list[@accessiblename='Vista Elementos']
+				</item>
+				<item
+				addcaps="listitem,uiautomation,uiautomationinvoke,uiautomationvalue"
+				capname="listitem"
+				id="808ee4e8-c1cc-4703-a9ae-6f6475f1e73b"
+				name="ListItem0"
+				refimgid="12059f04-03dd-4497-9168-f293e4800642"
+				searchtimeout="30000ms">
+					/form[@processname='explorer' and @windowtext~'Files2']/element[@class='ShellTabWindowClass']//element[@instance='1']/container[@caption='ShellView']/?/?/listitem[@automationid='0']
+				</item>
+				<item
+				addcaps="listitem,uiautomation,uiautomationinvoke,uiautomationvalue"
+				capname="listitem"
+				id="63d7b970-1f38-447a-9121-be06a131ba20"
+				name="ListItem4"
+				refimgid="a4fe7ee7-5487-44cb-9237-4abf14fdf11a"
+				searchtimeout="30000ms">
+					/form[@processname='explorer' and @windowtext~'Files2']/element[@class='ShellTabWindowClass']//element[@instance='1']/container[@caption='ShellView']/?/?/listitem[@automationid='4']
+				</item>
+				<basepath>
+					/form[@processname='explorer' and @windowtext~'Files2']/element[@class='ShellTabWindowClass']//element[@instance='1']/container[@caption='ShellView']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@processname='explorer' and @windowtext~'Files2']
 			</basepath>

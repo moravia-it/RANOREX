@@ -21,8 +21,8 @@ rxversion="7.2">
 			datarangeactive="True"
 			datasource="NewConnector"
 			id="674b717e-8294-42e9-9e0d-762f8983fec3"
-			maxrange="1"
-			minrange="1"
+			maxrange="5"
+			minrange="5"
 			name="TestCase">
 			</testcase>
 			<testmodule

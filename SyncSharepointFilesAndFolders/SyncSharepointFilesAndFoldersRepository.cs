@@ -1292,7 +1292,11 @@ namespace SyncSharepointFilesAndFolders
         [RepositoryFolder("64e8711a-1757-4b13-a989-c81cd9ab9f52")]
         public partial class Files2AppFolder : RepoGenBaseFolder
         {
+            SyncSharepointFilesAndFoldersRepositoryFolders.ShellViewFolder1 _shellview;
             RepoItemInfo _systemitemnamedisplayInfo;
+            RepoItemInfo _vistaelementosInfo;
+            RepoItemInfo _systemitemnamedisplay1Info;
+            RepoItemInfo _systemitemnamedisplay2Info;
 
             /// <summary>
             /// Creates a new Files2  folder.
@@ -1300,7 +1304,11 @@ namespace SyncSharepointFilesAndFolders
             public Files2AppFolder(RepoGenBaseFolder parentFolder) :
                     base("Files2", "/form[@processname='explorer' and @windowtext~'Files2']", parentFolder, 30000, null, true, "64e8711a-1757-4b13-a989-c81cd9ab9f52", "")
             {
+                _shellview = new SyncSharepointFilesAndFoldersRepositoryFolders.ShellViewFolder1(this);
                 _systemitemnamedisplayInfo = new RepoItemInfo(this, "SystemItemNameDisplay", "element[@class='ShellTabWindowClass']//container[@automationid='FolderLayoutContainer']/?/?/list/listitem[@automationid='0']", 30000, null, "4bac66de-3820-48ae-be99-1399a0dc7e98");
+                _vistaelementosInfo = new RepoItemInfo(this, "VistaElementos", "element[@class='ShellTabWindowClass']//element/container/list", 30000, null, "c8ee505a-e0e0-492c-a320-01dd70d67870");
+                _systemitemnamedisplay1Info = new RepoItemInfo(this, "SystemItemNameDisplay1", "element[@class='ShellTabWindowClass']//element[@instance='1']//listitem[@automationid='0']/text[@automationid='System.ItemNameDisplay']", 30000, null, "db5301e9-8702-46d0-a1ae-5689d93e1f78");
+                _systemitemnamedisplay2Info = new RepoItemInfo(this, "SystemItemNameDisplay2", "element[@class='ShellTabWindowClass']//element[@instance='1']//listitem[@automationid='4']/text[@automationid='System.ItemNameDisplay']", 30000, null, "d58d3428-9ae7-4acf-8488-1747e27e5ad5");
             }
 
             /// <summary>
@@ -1348,6 +1356,205 @@ namespace SyncSharepointFilesAndFolders
                 get
                 {
                     return _systemitemnamedisplayInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VistaElementos item.
+            /// </summary>
+            [RepositoryItem("c8ee505a-e0e0-492c-a320-01dd70d67870")]
+            public virtual Ranorex.List VistaElementos
+            {
+                get
+                {
+                    return _vistaelementosInfo.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VistaElementos item info.
+            /// </summary>
+            [RepositoryItemInfo("c8ee505a-e0e0-492c-a320-01dd70d67870")]
+            public virtual RepoItemInfo VistaElementosInfo
+            {
+                get
+                {
+                    return _vistaelementosInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SystemItemNameDisplay1 item.
+            /// </summary>
+            [RepositoryItem("db5301e9-8702-46d0-a1ae-5689d93e1f78")]
+            public virtual Ranorex.Text SystemItemNameDisplay1
+            {
+                get
+                {
+                    return _systemitemnamedisplay1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SystemItemNameDisplay1 item info.
+            /// </summary>
+            [RepositoryItemInfo("db5301e9-8702-46d0-a1ae-5689d93e1f78")]
+            public virtual RepoItemInfo SystemItemNameDisplay1Info
+            {
+                get
+                {
+                    return _systemitemnamedisplay1Info;
+                }
+            }
+
+            /// <summary>
+            /// The SystemItemNameDisplay2 item.
+            /// </summary>
+            [RepositoryItem("d58d3428-9ae7-4acf-8488-1747e27e5ad5")]
+            public virtual Ranorex.Text SystemItemNameDisplay2
+            {
+                get
+                {
+                    return _systemitemnamedisplay2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SystemItemNameDisplay2 item info.
+            /// </summary>
+            [RepositoryItemInfo("d58d3428-9ae7-4acf-8488-1747e27e5ad5")]
+            public virtual RepoItemInfo SystemItemNameDisplay2Info
+            {
+                get
+                {
+                    return _systemitemnamedisplay2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ShellView folder.
+            /// </summary>
+            [RepositoryFolder("9815f2ee-0930-43fa-b653-267649c154ca")]
+            public virtual SyncSharepointFilesAndFoldersRepositoryFolders.ShellViewFolder1 ShellView
+            {
+                get { return _shellview; }
+            }
+        }
+
+        /// <summary>
+        /// The ShellViewFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("9815f2ee-0930-43fa-b653-267649c154ca")]
+        public partial class ShellViewFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _vistaelementos1Info;
+            RepoItemInfo _listitem0Info;
+            RepoItemInfo _listitem4Info;
+
+            /// <summary>
+            /// Creates a new ShellView  folder.
+            /// </summary>
+            public ShellViewFolder1(RepoGenBaseFolder parentFolder) :
+                    base("ShellView", "element[@class='ShellTabWindowClass']//element[@instance='1']/container[@caption='ShellView']", parentFolder, 30000, null, false, "9815f2ee-0930-43fa-b653-267649c154ca", "")
+            {
+                _vistaelementos1Info = new RepoItemInfo(this, "VistaElementos1", "?/?/list[@accessiblename='Vista Elementos']", 30000, null, "b9ecb755-aea5-4b10-9563-9b4f858fe5b1");
+                _listitem0Info = new RepoItemInfo(this, "ListItem0", "?/?/listitem[@automationid='0']", 30000, null, "808ee4e8-c1cc-4703-a9ae-6f6475f1e73b");
+                _listitem4Info = new RepoItemInfo(this, "ListItem4", "?/?/listitem[@automationid='4']", 30000, null, "63d7b970-1f38-447a-9121-be06a131ba20");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9815f2ee-0930-43fa-b653-267649c154ca")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9815f2ee-0930-43fa-b653-267649c154ca")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VistaElementos1 item.
+            /// </summary>
+            [RepositoryItem("b9ecb755-aea5-4b10-9563-9b4f858fe5b1")]
+            public virtual Ranorex.List VistaElementos1
+            {
+                get
+                {
+                    return _vistaelementos1Info.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VistaElementos1 item info.
+            /// </summary>
+            [RepositoryItemInfo("b9ecb755-aea5-4b10-9563-9b4f858fe5b1")]
+            public virtual RepoItemInfo VistaElementos1Info
+            {
+                get
+                {
+                    return _vistaelementos1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ListItem0 item.
+            /// </summary>
+            [RepositoryItem("808ee4e8-c1cc-4703-a9ae-6f6475f1e73b")]
+            public virtual Ranorex.ListItem ListItem0
+            {
+                get
+                {
+                    return _listitem0Info.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItem0 item info.
+            /// </summary>
+            [RepositoryItemInfo("808ee4e8-c1cc-4703-a9ae-6f6475f1e73b")]
+            public virtual RepoItemInfo ListItem0Info
+            {
+                get
+                {
+                    return _listitem0Info;
+                }
+            }
+
+            /// <summary>
+            /// The ListItem4 item.
+            /// </summary>
+            [RepositoryItem("63d7b970-1f38-447a-9121-be06a131ba20")]
+            public virtual Ranorex.ListItem ListItem4
+            {
+                get
+                {
+                    return _listitem4Info.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItem4 item info.
+            /// </summary>
+            [RepositoryItemInfo("63d7b970-1f38-447a-9121-be06a131ba20")]
+            public virtual RepoItemInfo ListItem4Info
+            {
+                get
+                {
+                    return _listitem4Info;
                 }
             }
         }
